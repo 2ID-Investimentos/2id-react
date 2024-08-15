@@ -52,9 +52,6 @@
     display: flex;
 }
 
-.login-conteudo {
-}
-
 .login-conteudo h1 {
     font-size: 26px;
     font-weight: 700;
@@ -101,4 +98,23 @@ a {
     opacity: 0.7;
     color: #333;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1048px) {
+    .sobre {
+        width: 100dvw;
+        height: 100dvh;
+    }
+
+    .container-login {
+        width: 100dvw;
+        height: 100dvh;
+    }
+
+    .container {
+        height: fit-content;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
 }
