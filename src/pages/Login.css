@@ -118,3 +118,13 @@ a {
         justify-content: center;
     }
 }
+
+a:hover {
+    color: #219ebc;
+    opacity: 1;
+}
+
+input[type='submit']:hover,
+button:hover {
+    background-color: #219ebc;
+}
