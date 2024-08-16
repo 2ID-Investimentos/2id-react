@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 const LoginForm = () => {
     return (
         <div className="container-login">
@@ -7,7 +9,8 @@ const LoginForm = () => {
 
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Senha" />
-                <input type="submit" value="Entrar" />
+                <Button>Entrar</Button>
+                {/* <input type="submit" value="Entrar" /> */}
                 <div className="container-span">
                     <span>Não tem uma conta?</span>
                     <span>
