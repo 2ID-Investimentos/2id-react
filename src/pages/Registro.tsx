@@ -1,5 +1,12 @@
+import Sobre from '../components/Sobre';
+
 const Registro = () => {
-    return <h1>Registro</h1>;
+    return (
+        <div className="container">
+            <Sobre />
+            
+        </div>
+    );
 };
 
 export default Registro;
