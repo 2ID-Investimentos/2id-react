@@ -1,4 +1,5 @@
 import Button from './Button';
+import Input from './Input';
 
 const LoginForm = () => {
     return (
@@ -7,8 +8,8 @@ const LoginForm = () => {
                 <h1>Olá Novamente!</h1>
                 <p>Bem vindo de volta.</p>
 
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Senha" />
+                <Input type="email" placeholder="Email" />
+                <Input type="password" placeholder="Senha" />
                 <Button navigateTo={'/dashboard'}>Entrar</Button>
                 <div className="container-span">
                     <span>Não tem uma conta?</span>

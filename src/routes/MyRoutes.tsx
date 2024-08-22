@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 
-import Login from '../pages/Login';
+import Login from '../pages/Login/Login';
 import Error404 from '../pages/Error404';
-import Registro from '../pages/Registro';
+import Registro from '../pages/Registro/Registro';
 
 const MyRoutes = () => {
     return (

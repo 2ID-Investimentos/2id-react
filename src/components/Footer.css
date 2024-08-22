@@ -1,4 +1,5 @@
 .container-footer {
+    background-color: #f3f3f3;
     padding-top: 51px;
     display: flex;
     flex-direction: row;
@@ -14,6 +15,7 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .container-footer p {
@@ -42,6 +44,8 @@ h1 {
         margin-left: 10px;
     }
     .container-footer {
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
 
@@ -50,4 +54,9 @@ h1 {
         justify-content: center;
         align-items: center;
     }
+}
+
+Button {
+    margin-top: 20px;
+    width: 100%;
 }

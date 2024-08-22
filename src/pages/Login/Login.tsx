@@ -1,6 +1,6 @@
-import LoginForm from '../components/LoginForm';
-import Sobre from '../components/Sobre';
-import './Login.css';
+import LoginForm from '../../components/LoginForm';
+import Sobre from '../../components/Sobre';
+import './login.css';
 
 const Login = () => {
     return (

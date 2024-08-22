@@ -1,4 +1,5 @@
-import './Footer.css';
+import Button from './Button';
+import './footer.css';
 
 const Footer = () => {
     return (
@@ -13,13 +14,29 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className="creditos">
-                    <div className="daniel">
+                    <div className="pessoa">
                         <h1>Daniel Reis</h1>
+                        <div className="links">
+                            <Button
+                                onClick={() => {
+                                    window.open('https://www.linkedin.com/in/drgsantaana/');
+                                }}
+                            >
+                                Linkedin
+                            </Button>
+                            <Button
+                                onClick={() => {
+                                    window.open('https://www.linkedin.com/in/drgsantaana/');
+                                }}
+                            >
+                                GitHub
+                            </Button>
+                        </div>
                     </div>
-                    <div className="igor">
+                    <div className="pessoa">
                         <h1>Igor Jose</h1>
                     </div>
-                    <div className="isadora">
+                    <div className="pessoa">
                         <h1>Isadora Zanitti</h1>
                     </div>
                 </div>

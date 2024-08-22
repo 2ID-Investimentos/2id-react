@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import './Button.css';
-const Button = ({ children, onClick = () => {}, navigateTo }) => {
+import './button.css';
+const Button = ({ children, onClick, navigateTo }) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
