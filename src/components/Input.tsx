@@ -1,11 +1,10 @@
-import './input.css';
-
+import '../styles/global.css';
 interface InputProps {
     type: string;
     placeholder: string;
 }
 
-const Input = ({ type, placeholder }: InputProps) => {
+const Input: React.FC<InputProps> = ({ type, placeholder }) => {
     return <input type={type} placeholder={placeholder} />;
 };
 

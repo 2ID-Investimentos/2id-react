@@ -1,14 +1,11 @@
 import { BrowserRouter } from 'react-router-dom';
 import MyRoutes from './routes/MyRoutes';
-import Footer from './components/Footer';
+import './styles/global.css';
 
-const App = () => {
-    return (
-        <BrowserRouter>
-            <MyRoutes />
-            <Footer />
-        </BrowserRouter>
-    );
-};
+const App = () => (
+    <BrowserRouter>
+        <MyRoutes />
+    </BrowserRouter>
+);
 
 export default App;

@@ -6,7 +6,7 @@ const Sobre = () => {
             <div className="sobre-conteudo">
                 <h1>2ID - Investimentos</h1>
                 <p>O melhor gerenciador de investimentos</p>
-                <Button navigateTo="/registro">Saiba Mais</Button>
+                <Button navigateTo="/saiba-mais">Saiba Mais</Button>
             </div>
         </div>
     );
