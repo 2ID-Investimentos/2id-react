@@ -1,0 +1,27 @@
+.sidebar {
+    padding-top: 100px;
+    width: 220px;
+    background-color: #fb8500;
+}
+
+.sidebar h1 {
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.sidebar .nav-link {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+.sidebar .nav-link.active {
+    background-color: #ffb703;
+    border-radius: 4px;
+}
