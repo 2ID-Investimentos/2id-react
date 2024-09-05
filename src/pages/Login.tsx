@@ -5,7 +5,7 @@ import LoginForm from '../components/LoginForm';
 
 const Login = () => {
     return (
-        <Container fluid className="container-fluid">
+        <Container fluid className="container-fluid ">
             <Row className="g-0 w-100 h-100">
                 <Col md={8} className="sobre">
                     <Sobre />
