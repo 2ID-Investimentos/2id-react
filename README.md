@@ -1,50 +1,85 @@
-# React + TypeScript + Vite
+# Como rodar o projeto Vite React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Pré-requisitos
 
-Currently, two official plugins are available:
+Antes de começar, verifique se você tem o [Node.js](https://nodejs.org/) e o [npm](https://www.npmjs.com/) instalados em sua máquina. Você pode verificar a instalação com os comandos:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+node -v
+npm -v
+Se não tiver instalado, baixe e instale a versão mais recente do Node.js aqui.
 
-## Expanding the ESLint configuration
+Passo a passo para rodar o projeto
+Clone o repositório
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+No terminal, clone o projeto para o seu diretório local:
 
-- Configure the top-level `parserOptions` property like this:
+bash
+Copiar código
+git clone https://github.com/seu-usuario/seu-repositorio.git
+Instale as dependências
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Entre no diretório do projeto e execute o comando para instalar as dependências:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+bash
+Copiar código
+cd seu-repositorio
+npm install
+Possíveis erros:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Erro de versão de pacote: Caso haja conflitos de dependência ou erros de versão de pacote, use o seguinte comando:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+bash
+Copiar código
+npm install --legacy-peer-deps
+Esse comando ignora conflitos entre versões de pacotes.
+
+ERESOLVE unable to resolve dependency tree: Isso pode acontecer quando há conflitos de dependências. Para resolver, use:
+
+bash
+Copiar código
+npm install --force
+Esse comando força a instalação, mesmo com possíveis erros.
+
+Inicie o servidor de desenvolvimento
+
+Com as dependências instaladas, você pode rodar o servidor de desenvolvimento:
+
+bash
+Copiar código
+npm run dev
+O servidor será iniciado e você verá uma mensagem com o endereço local onde o projeto pode ser acessado, geralmente http://localhost:5173.
+
+Compilação para produção
+
+Para gerar os arquivos otimizados para produção, execute:
+
+bash
+Copiar código
+npm run build
+Os arquivos serão gerados na pasta dist.
+
+Servidor local para visualizar a build
+
+Se quiser rodar a build localmente para testar, use o seguinte comando:
+
+bash
+Copiar código
+npm run preview
+Ferramentas utilizadas
+Vite
+React
+Node.js
+Problemas comuns
+Porta em uso: Caso a porta padrão (5173) já esteja em uso, o Vite tentará outra porta automaticamente, ou você pode especificar uma porta com:
+
+bash
+Copiar código
+npm run dev -- --port 3000
+Dependências desatualizadas: Se houver problemas com versões de dependências ou pacotes incompatíveis, considere atualizar as dependências usando:
+
+bash
+Copiar código
+npm update
+Se encontrar outros problemas, verifique os logs de erro no terminal para entender a causa ou procure por soluções na comunidade do Vite e do React.
 ```
